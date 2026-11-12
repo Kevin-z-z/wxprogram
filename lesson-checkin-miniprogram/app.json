@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/parent/index",
+    "pages/teacher/index",
+    "pages/courses/index",
+    "pages/schedule/index",
+    "pages/session/index",
+    "pages/checkin/index",
+    "pages/leave/index",
+    "pages/leaves/index",
+    "pages/hours/index",
+    "pages/orders/index",
+    "pages/messages/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "课时与打卡",
+    "navigationBarBackgroundColor": "#f5f7fa",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5f7fa"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于核验本次课程的位置打卡"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
+}

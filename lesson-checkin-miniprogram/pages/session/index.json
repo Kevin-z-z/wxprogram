@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "课次详情",
+  "usingComponents": {
+    "role-nav": "/components/nav/index"
+  }
+}

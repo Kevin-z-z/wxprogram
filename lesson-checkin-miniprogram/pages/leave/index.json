@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "申请请假",
+  "usingComponents": {
+    "role-nav": "/components/nav/index"
+  }
+}

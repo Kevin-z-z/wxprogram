@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "课程打卡",
+  "usingComponents": {
+    "role-nav": "/components/nav/index"
+  }
+}

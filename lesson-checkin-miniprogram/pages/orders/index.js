@@ -1,0 +1,2 @@
+const {store,guard,run,go}=require('../../utils/page');
+Page({data:{tab:'all'},onShow(){if(!guard('parent'))return;this.orders=store.view().orders;this.update();},tab(e){this.setData({tab:e.currentTarget.dataset.tab});this.update();},update(){const v=store.view();this.setData({items:this.orders.filter(x=>this.data.tab==='all'||x.refund!=='无退款').map(x=>({...x,courseName:v.courses.find(c=>c.id===x.courseId).name}))});}});

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "订单与退款",
+  "usingComponents": {
+    "role-nav": "/components/nav/index"
+  }
+}

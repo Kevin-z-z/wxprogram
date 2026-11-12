@@ -1,0 +1,2 @@
+const {store,guard,run,go}=require('../../utils/page');
+Page({onShow(){if(!guard('teacher'))return;const v=store.view();this.setData({sessions:v.sessions,pending:v.leaves.filter(x=>x.status==='pending'&&v.sessions.some(s=>s.id===x.sessionId)).length,unsettled:v.sessions.filter(x=>!x.settled).length});},open(e){go('session',e.currentTarget.dataset.id);},leaves(){go('leaves');},logout(){store.logout();wx.reLaunch({url:'/pages/login/index'});}});

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "家长工作台",
+  "usingComponents": {
+    "role-nav": "/components/nav/index"
+  }
+}

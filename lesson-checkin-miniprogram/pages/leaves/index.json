@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "请假记录与审批",
+  "usingComponents": {
+    "role-nav": "/components/nav/index"
+  }
+}

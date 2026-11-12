@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "课时明细",
+  "usingComponents": {
+    "role-nav": "/components/nav/index"
+  }
+}

@@ -1,0 +1,2 @@
+const {store,guard,run,go}=require('../../utils/page');
+Page({onShow(){if(!guard('parent'))return;const v=store.view();this.setData({user:v.user,courses:v.courses.filter(x=>x.enrolled),sessions:v.sessions.slice(0,2),total:v.courses.reduce((n,c)=>n+c.balance,0)});},open(e){go(e.currentTarget.dataset.page,e.currentTarget.dataset.id);},logout(){store.logout();wx.reLaunch({url:'/pages/login/index'});}});

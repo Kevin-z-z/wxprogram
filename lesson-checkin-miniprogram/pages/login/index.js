@@ -1,0 +1,2 @@
+const {store,guard,run,go}=require('../../utils/page');
+Page({data:{role:'parent'},onShow(){const u=store.get().user;if(u)wx.reLaunch({url:'/pages/'+u.role+'/index'});},select(e){this.setData({role:e.currentTarget.dataset.role});},login(){store.login(this.data.role);wx.reLaunch({url:'/pages/'+this.data.role+'/index'});},reset(){wx.showModal({title:'重置演示数据',content:'将清除本机演示记录并恢复初始数据。',success:r=>{if(r.confirm){store.reset();wx.showToast({title:'已重置'});}}});}});
